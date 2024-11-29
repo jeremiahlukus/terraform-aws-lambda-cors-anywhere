@@ -42,5 +42,5 @@ resource "aws_lambda_permission" "allow_invoke" {
   action                 = "lambda:InvokeFunctionUrl"
   function_name          = aws_lambda_function.main.arn
   principal              = "*"
-  function_url_auth_type = aws_lambda_function_url.url.authorization_type
+  function_url_auth_type = aws_lambda_function_url.main.authorization_type
 }
