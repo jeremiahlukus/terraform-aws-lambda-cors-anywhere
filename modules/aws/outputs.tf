@@ -1,3 +1,3 @@
-# output "url" {
-#   value = aws_lambda_function_url.lambda_cors_anywhere.url
-# }
+output "function_url" {
+  value = aws_lambda_function_url.main.function_url
+}
