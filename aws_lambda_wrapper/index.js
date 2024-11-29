@@ -60,7 +60,6 @@ exports.handler = async function (event, context, callback) {
 
     // Copy relevant response headers
     const responseHeaders = {
-      'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
       'Access-Control-Allow-Headers': '*',
       'Access-Control-Expose-Headers': '*',
@@ -83,7 +82,6 @@ exports.handler = async function (event, context, callback) {
     return {
       statusCode: error.response?.status || 500,
       headers: {
-        'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
         'Access-Control-Allow-Headers': '*',
         'Content-Type': 'application/json'
