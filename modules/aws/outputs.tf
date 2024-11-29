@@ -1,3 +1,3 @@
-output "function_url" {
-  value = aws_lambda_function_url.url.url
+output "url" {
+  value = module.aws.function_url
 }
