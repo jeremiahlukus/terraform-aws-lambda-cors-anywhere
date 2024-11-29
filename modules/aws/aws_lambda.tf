@@ -44,7 +44,3 @@ resource "aws_lambda_permission" "allow_invoke" {
   principal              = "*"
   function_url_auth_type = aws_lambda_function_url.url.authorization_type
 }
-
-output "function_url" {
-  value = aws_lambda_function_url.url.url
-}
