@@ -1,3 +1,3 @@
 output "url" {
-  value = module.aws.function_url
+  value = aws_lambda_function_url.lambda_cors_anywhere.url
 }
